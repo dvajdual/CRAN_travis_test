@@ -6,25 +6,32 @@ warnings_are_errors: false
 matrix:
   include:
     - dist: trusty
-      r:
-         - oldrel
-         - release
-         - devel
+      r: oldrel
+    - dist: trusty
+      r: release
+    - dist: trusty
+      r: devel
     - dist: xenial
-      r:
-         - oldrel
-         - release
-         - devel
+      r: oldrel
+    - dist: xenial
+      r: release
+    - dist: xenial
+      r: devel
     - dist: bionic
-      r:
-         - oldrel
-         - release
-         - devel
+      r: oldrel
+    - dist: bionic
+      r: release
+    - dist: bionic
+      r: devel
     - os: osx
-      r:
-         - oldrel
-         - release
-         - devel
+      osx_image: xcode11.3      
+	  r: oldrel
+    - os: osx
+      osx_image: xcode11.3
+      r: release
+      osx_image: xcode11.3
+    - os: osx
+      r: devel
       osx_image: xcode11.3
 
 notifications:
