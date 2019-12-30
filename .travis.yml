@@ -24,12 +24,11 @@ matrix:
     - dist: bionic
       r: devel
     - os: osx
-      osx_image: xcode11.3      
-	  r: oldrel
+      osx_image: xcode11.3
+      r: oldrel
     - os: osx
       osx_image: xcode11.3
       r: release
-      osx_image: xcode11.3
     - os: osx
       r: devel
       osx_image: xcode11.3
