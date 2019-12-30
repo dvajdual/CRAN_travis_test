@@ -2,17 +2,29 @@ language: r
 cache: packages
 warnings_are_errors: false
 
-r:
-  - oldrel
-  - release
-  - devel
 
 matrix:
   include:
     - dist: trusty
+      r:
+         - oldrel
+         - release
+         - devel
     - dist: xenial
+      r:
+         - oldrel
+         - release
+         - devel
     - dist: bionic
+      r:
+         - oldrel
+         - release
+         - devel
     - os: osx
+      r:
+         - oldrel
+         - release
+         - devel
       osx_image: xcode11.3
 
 notifications:
