@@ -19,3 +19,4 @@ notifications:
   email:
     on_success: change
     on_failure: change
+  slack: speechdev:fxNJNl9oIJ9Ay9sjk9am26Bw
