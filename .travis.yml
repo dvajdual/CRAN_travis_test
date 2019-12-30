@@ -1,15 +1,21 @@
-
-language: R
+language: r
 cache: packages
 warnings_are_errors: false
+
+r:
+  - oldrel
+  - release
+  - devel
+
+matrix:
+  include:
+    - dist: trusty
+    - dist: xenial
+    - dist: bionic
+    - os: osx
+      osx_image: xcode11.3
+
 notifications:
   email:
     on_success: change
     on_failure: change
-matrix:
-  include:
-  - r: release
-  - r: release
-    os: osx
-    osx_image: xcode9.2
-
